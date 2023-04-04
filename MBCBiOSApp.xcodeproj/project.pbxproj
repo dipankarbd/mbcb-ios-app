@@ -11,7 +11,6 @@
 		EF6BA33D29DD586300F82AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA33C29DD586300F82AB7 /* ContentView.swift */; };
 		EF6BA33F29DD586400F82AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA33E29DD586400F82AB7 /* Assets.xcassets */; };
 		EF6BA34229DD586400F82AB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA34129DD586400F82AB7 /* Preview Assets.xcassets */; };
-		EF6BA34C29DD586400F82AB7 /* MBCBiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA34B29DD586400F82AB7 /* MBCBiOSAppTests.swift */; };
 		EF6BA36529DD593600F82AB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA36429DD593600F82AB7 /* Localizable.strings */; };
 		EF6BA36829DD597800F82AB7 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA36729DD597800F82AB7 /* ColorExtensions.swift */; };
 		EF6BA36A29DD599300F82AB7 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA36929DD599300F82AB7 /* DataExtensions.swift */; };
@@ -19,6 +18,12 @@
 		EF6BA36F29DD5A2A00F82AB7 /* transactions.json in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA36E29DD5A2A00F82AB7 /* transactions.json */; };
 		EF6BA37129DD5A6A00F82AB7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37029DD5A6A00F82AB7 /* Utils.swift */; };
 		EF6BA37329DD5A8F00F82AB7 /* MonthlyBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37229DD5A8F00F82AB7 /* MonthlyBalance.swift */; };
+		EF6BA37529DD5AD500F82AB7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37429DD5AD500F82AB7 /* HTTPClient.swift */; };
+		EF6BA37829DD5B0700F82AB7 /* TransactionApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37729DD5B0700F82AB7 /* TransactionApiService.swift */; };
+		EF6BA37A29DD5B1C00F82AB7 /* TransactionMockApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37929DD5B1C00F82AB7 /* TransactionMockApiService.swift */; };
+		EF6BA37C29DD5B4800F82AB7 /* ApiServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37B29DD5B4800F82AB7 /* ApiServiceError.swift */; };
+		EF6BA37E29DD5B6800F82AB7 /* TransactionRemoteApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37D29DD5B6800F82AB7 /* TransactionRemoteApiService.swift */; };
+		EF6BA38029DD5C0E00F82AB7 /* TransactionRemoteApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA37F29DD5C0E00F82AB7 /* TransactionRemoteApiServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		EF6BA33E29DD586400F82AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6BA34129DD586400F82AB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF6BA34729DD586400F82AB7 /* MBCBiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBCBiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF6BA34B29DD586400F82AB7 /* MBCBiOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCBiOSAppTests.swift; sourceTree = "<group>"; };
 		EF6BA36429DD593600F82AB7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		EF6BA36729DD597800F82AB7 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		EF6BA36929DD599300F82AB7 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
@@ -46,6 +50,12 @@
 		EF6BA36E29DD5A2A00F82AB7 /* transactions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transactions.json; sourceTree = "<group>"; };
 		EF6BA37029DD5A6A00F82AB7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		EF6BA37229DD5A8F00F82AB7 /* MonthlyBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyBalance.swift; sourceTree = "<group>"; };
+		EF6BA37429DD5AD500F82AB7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EF6BA37729DD5B0700F82AB7 /* TransactionApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionApiService.swift; sourceTree = "<group>"; };
+		EF6BA37929DD5B1C00F82AB7 /* TransactionMockApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionMockApiService.swift; sourceTree = "<group>"; };
+		EF6BA37B29DD5B4800F82AB7 /* ApiServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceError.swift; sourceTree = "<group>"; };
+		EF6BA37D29DD5B6800F82AB7 /* TransactionRemoteApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRemoteApiService.swift; sourceTree = "<group>"; };
+		EF6BA37F29DD5C0E00F82AB7 /* TransactionRemoteApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRemoteApiServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +97,7 @@
 		EF6BA33929DD586300F82AB7 /* MBCBiOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				EF6BA37629DD5AEC00F82AB7 /* Services */,
 				EF6BA36B29DD59CA00F82AB7 /* Models */,
 				EF6BA36629DD596200F82AB7 /* Extensions */,
 				EF6BA33A29DD586300F82AB7 /* MBCBiOSAppApp.swift */,
@@ -96,6 +107,7 @@
 				EF6BA36429DD593600F82AB7 /* Localizable.strings */,
 				EF6BA36E29DD5A2A00F82AB7 /* transactions.json */,
 				EF6BA37029DD5A6A00F82AB7 /* Utils.swift */,
+				EF6BA37429DD5AD500F82AB7 /* HTTPClient.swift */,
 			);
 			path = MBCBiOSApp;
 			sourceTree = "<group>";
@@ -111,7 +123,7 @@
 		EF6BA34A29DD586400F82AB7 /* MBCBiOSAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF6BA34B29DD586400F82AB7 /* MBCBiOSAppTests.swift */,
+				EF6BA37F29DD5C0E00F82AB7 /* TransactionRemoteApiServiceTests.swift */,
 			);
 			path = MBCBiOSAppTests;
 			sourceTree = "<group>";
@@ -130,8 +142,19 @@
 			children = (
 				EF6BA36C29DD59DA00F82AB7 /* Transaction.swift */,
 				EF6BA37229DD5A8F00F82AB7 /* MonthlyBalance.swift */,
+				EF6BA37B29DD5B4800F82AB7 /* ApiServiceError.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EF6BA37629DD5AEC00F82AB7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF6BA37729DD5B0700F82AB7 /* TransactionApiService.swift */,
+				EF6BA37929DD5B1C00F82AB7 /* TransactionMockApiService.swift */,
+				EF6BA37D29DD5B6800F82AB7 /* TransactionRemoteApiService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +210,7 @@
 					};
 					EF6BA34629DD586400F82AB7 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = EF6BA33629DD586300F82AB7;
 					};
 				};
@@ -238,11 +262,16 @@
 			files = (
 				EF6BA33D29DD586300F82AB7 /* ContentView.swift in Sources */,
 				EF6BA36A29DD599300F82AB7 /* DataExtensions.swift in Sources */,
+				EF6BA37C29DD5B4800F82AB7 /* ApiServiceError.swift in Sources */,
+				EF6BA37529DD5AD500F82AB7 /* HTTPClient.swift in Sources */,
 				EF6BA33B29DD586300F82AB7 /* MBCBiOSAppApp.swift in Sources */,
 				EF6BA36829DD597800F82AB7 /* ColorExtensions.swift in Sources */,
+				EF6BA37829DD5B0700F82AB7 /* TransactionApiService.swift in Sources */,
 				EF6BA37329DD5A8F00F82AB7 /* MonthlyBalance.swift in Sources */,
 				EF6BA36D29DD59DA00F82AB7 /* Transaction.swift in Sources */,
 				EF6BA37129DD5A6A00F82AB7 /* Utils.swift in Sources */,
+				EF6BA37A29DD5B1C00F82AB7 /* TransactionMockApiService.swift in Sources */,
+				EF6BA37E29DD5B6800F82AB7 /* TransactionRemoteApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6BA34C29DD586400F82AB7 /* MBCBiOSAppTests.swift in Sources */,
+				EF6BA38029DD5C0E00F82AB7 /* TransactionRemoteApiServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,14 +469,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipankar.MBCBiOSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MBCBiOSApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MBCBiOSApp";
@@ -459,10 +495,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dipankar.MBCBiOSAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

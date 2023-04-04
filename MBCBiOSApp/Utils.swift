@@ -141,7 +141,7 @@ struct Utils {
         for (key, val) in dataByMonth {
             let avarage = calculateAvarage(days: val)
             let id = getId(key)
-            let out = MonthlyBalance(id: result.count + 1, month: monthToMonthYearString(month: key), amount: avarage)
+            let out = MonthlyBalance(id: id, month: monthToMonthYearString(month: key), amount: avarage)
             result.append(out)
         }
         
