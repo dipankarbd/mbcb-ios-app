@@ -1,7 +1,19 @@
-/* 
-  Localizable.strings
-  MBCBiOSApp
 
-  Created by Dipankar Biswas on 4/5/23.
-  
+/*
+ Localizable.strings
+ MBCBiOSApp
+
+ Created by Dipankar Kumar Biswas
+ Email: dipankarbiswas@live.com
+ 
 */
+
+
+"balanceDemo" = "balance demo";
+"networkError" =  "Network error occurred";
+"invalidData" =  "Invalid data received";
+"unknownError" =  "Unknown error occurred";
+"errorAlertTitle" = "Error!";
+"ok" = "OK";
+"pleaseWaitMessage" = "Please Wait...";
+"cumulativeBalance" = "Cumulative Balance";

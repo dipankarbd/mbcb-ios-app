@@ -114,12 +114,7 @@ struct Utils {
         
         return total / Decimal(days.count)
     }
-    
-    private static func getId(_ month: String) -> Int {
-        let parts = month.components(separatedBy: "-")
-         
-        return months.firstIndex(of: parts[0]) ?? 0
-    }
+   
     
     static func calculateCumulativeBalance(transactions: [Transaction]) -> Decimal {
         return transactions.map({ $0.amount }).reduce(0.0) { (acc, curr) in
@@ -140,8 +135,7 @@ struct Utils {
          
         for (key, val) in dataByMonth {
             let avarage = calculateAvarage(days: val)
-            let id = getId(key)
-            let out = MonthlyBalance(id: id, month: monthToMonthYearString(month: key), amount: avarage)
+            let out = MonthlyBalance(id: result.count + 1, month: monthToMonthYearString(month: key), amount: avarage)
             result.append(out)
         }
         
