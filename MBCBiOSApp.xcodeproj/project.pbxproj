@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EF6BA33B29DD586300F82AB7 /* MBCBiOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA33A29DD586300F82AB7 /* MBCBiOSAppApp.swift */; };
-		EF6BA33D29DD586300F82AB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA33C29DD586300F82AB7 /* ContentView.swift */; };
 		EF6BA33F29DD586400F82AB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA33E29DD586400F82AB7 /* Assets.xcassets */; };
 		EF6BA34229DD586400F82AB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA34129DD586400F82AB7 /* Preview Assets.xcassets */; };
 		EF6BA36529DD593600F82AB7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF6BA36429DD593600F82AB7 /* Localizable.strings */; };
@@ -29,6 +28,7 @@
 		EF6BA38829DD5D6600F82AB7 /* CumulativeBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA38729DD5D6600F82AB7 /* CumulativeBalanceView.swift */; };
 		EF6BA38A29DD5D8100F82AB7 /* MonthlyBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA38929DD5D8100F82AB7 /* MonthlyBalanceView.swift */; };
 		EF6BA38C29DD5DA100F82AB7 /* MonthlyBalanceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA38B29DD5DA100F82AB7 /* MonthlyBalanceRow.swift */; };
+		EF6BA38E29DD5F4000F82AB7 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BA38D29DD5F4000F82AB7 /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 /* Begin PBXFileReference section */
 		EF6BA33729DD586300F82AB7 /* MBCBiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBCBiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6BA33A29DD586300F82AB7 /* MBCBiOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCBiOSAppApp.swift; sourceTree = "<group>"; };
-		EF6BA33C29DD586300F82AB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF6BA33E29DD586400F82AB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF6BA34129DD586400F82AB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EF6BA34729DD586400F82AB7 /* MBCBiOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBCBiOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +65,7 @@
 		EF6BA38729DD5D6600F82AB7 /* CumulativeBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CumulativeBalanceView.swift; sourceTree = "<group>"; };
 		EF6BA38929DD5D8100F82AB7 /* MonthlyBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyBalanceView.swift; sourceTree = "<group>"; };
 		EF6BA38B29DD5DA100F82AB7 /* MonthlyBalanceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyBalanceRow.swift; sourceTree = "<group>"; };
+		EF6BA38D29DD5F4000F82AB7 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,18 +107,18 @@
 		EF6BA33929DD586300F82AB7 /* MBCBiOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				EF6BA38129DD5C7000F82AB7 /* Features */,
-				EF6BA37629DD5AEC00F82AB7 /* Services */,
-				EF6BA36B29DD59CA00F82AB7 /* Models */,
 				EF6BA36629DD596200F82AB7 /* Extensions */,
-				EF6BA33A29DD586300F82AB7 /* MBCBiOSAppApp.swift */,
-				EF6BA33C29DD586300F82AB7 /* ContentView.swift */,
+				EF6BA36B29DD59CA00F82AB7 /* Models */,
+				EF6BA37629DD5AEC00F82AB7 /* Services */,
+				EF6BA38129DD5C7000F82AB7 /* Features */,
 				EF6BA33E29DD586400F82AB7 /* Assets.xcassets */,
-				EF6BA34029DD586400F82AB7 /* Preview Content */,
-				EF6BA36429DD593600F82AB7 /* Localizable.strings */,
-				EF6BA36E29DD5A2A00F82AB7 /* transactions.json */,
+				EF6BA33A29DD586300F82AB7 /* MBCBiOSAppApp.swift */,
 				EF6BA37029DD5A6A00F82AB7 /* Utils.swift */,
 				EF6BA37429DD5AD500F82AB7 /* HTTPClient.swift */,
+				EF6BA36429DD593600F82AB7 /* Localizable.strings */,
+				EF6BA36E29DD5A2A00F82AB7 /* transactions.json */,
+				EF6BA38D29DD5F4000F82AB7 /* ViewFactory.swift */,
+				EF6BA34029DD586400F82AB7 /* Preview Content */,
 			);
 			path = MBCBiOSApp;
 			sourceTree = "<group>";
@@ -291,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6BA33D29DD586300F82AB7 /* ContentView.swift in Sources */,
 				EF6BA36A29DD599300F82AB7 /* DataExtensions.swift in Sources */,
 				EF6BA38829DD5D6600F82AB7 /* CumulativeBalanceView.swift in Sources */,
 				EF6BA37C29DD5B4800F82AB7 /* ApiServiceError.swift in Sources */,
@@ -304,6 +303,7 @@
 				EF6BA36D29DD59DA00F82AB7 /* Transaction.swift in Sources */,
 				EF6BA38429DD5CBD00F82AB7 /* BalanceViewModel.swift in Sources */,
 				EF6BA37129DD5A6A00F82AB7 /* Utils.swift in Sources */,
+				EF6BA38E29DD5F4000F82AB7 /* ViewFactory.swift in Sources */,
 				EF6BA37A29DD5B1C00F82AB7 /* TransactionMockApiService.swift in Sources */,
 				EF6BA37E29DD5B6800F82AB7 /* TransactionRemoteApiService.swift in Sources */,
 				EF6BA38629DD5CF500F82AB7 /* BalanceView.swift in Sources */,

@@ -2,16 +2,23 @@
 //  MBCBiOSAppApp.swift
 //  MBCBiOSApp
 //
-//  Created by Dipankar Biswas on 4/5/23.
+//  Created by Dipankar Kumar Biswas
+//  Email: dipankarbiswas@live.com
 //
 
 import SwiftUI
 
 @main
-struct MBCBiOSAppApp: App {
+struct noreda_mb_cb_iosApp: App {
+    init() {
+        let navBarAppearance = UINavigationBar.appearance()
+         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor(Color.theme.primaryDark)]
+         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(Color.theme.primaryDark)]
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewFactory.makeBalanceView()
         }
     }
 }
